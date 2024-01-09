@@ -1,7 +1,7 @@
 ---
 name: Issue Template
 about: Issue for mvvm_project
-title: "[Label] title"
+title: "[Label] Title"
 labels: ''
 assignees: huiwoo-jo
 
