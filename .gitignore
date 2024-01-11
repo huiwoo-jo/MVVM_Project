@@ -279,7 +279,6 @@ lint/tmp/
 # Google Services (e.g. APIs or Firebase)
 app/google-services.json
 .idea/misc.xml
-.idea/misc.xml
 
 replay_pid*
 .gradle/8.0/checksums/checksums.lock
