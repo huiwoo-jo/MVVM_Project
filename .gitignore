@@ -302,3 +302,4 @@ replay_pid*
 .idea/vcs.xml
 local.properties
 .gradle/buildOutputCleanup/buildOutputCleanup.lock
+.gradle/8.0/checksums/sha1-checksums.bin
