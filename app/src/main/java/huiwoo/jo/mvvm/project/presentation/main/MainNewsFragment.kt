@@ -48,7 +48,8 @@ class MainNewsFragment : Fragment() {
          * @return A new instance of fragment MainNewsFragment.
          */
         // TODO: Rename and change types and number of parameters
-        @JvmStatic
+        fun newInstance() = MainNewsFragment()
+        const val TAG = "MainNewsFragment"
         fun newInstance(param1: String, param2: String) =
             MainNewsFragment().apply {
                 arguments = Bundle().apply {
