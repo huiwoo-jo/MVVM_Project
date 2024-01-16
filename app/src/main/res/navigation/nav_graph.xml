@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/mainNewsFragment"
-        android:name="huiwoo.jo.mvvm.project.presentation.main.MainNewsFragment"
+        android:name="huiwoo.jo.mvvm.project.presentation.news.MainFragment"
         android:label="fragment_main_news"
         tools:layout="@layout/fragment_main_news">
         <action
@@ -16,7 +16,7 @@
     </fragment>
     <fragment
         android:id="@+id/detailNewsFragment"
-        android:name="huiwoo.jo.mvvm.project.presentation.detail.DetailNewsFragment"
+        android:name="huiwoo.jo.mvvm.project.presentation.news.DetailFragment"
         android:label="fragment_detail_news"
         tools:layout="@layout/fragment_detail_news" />
 </navigation>
