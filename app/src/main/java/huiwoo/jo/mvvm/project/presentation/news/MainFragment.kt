@@ -7,7 +7,6 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.viewModels
 import huiwoo.jo.mvvm.project.R
-import huiwoo.jo.mvvm.project.data.network.RetrofitObject
 import huiwoo.jo.mvvm.project.databinding.FragmentMainBinding
 
 class MainFragment : Fragment() {
@@ -26,14 +25,9 @@ class MainFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        viewModel.newsData.observe(viewLifecycleOwner) {
-            // fetched data
-            binding.recyclerview.submitList(it)
-        }
     }
 
     override fun onDestroyView() {
-        // fragment 와 fragment view -> Fragment
         _binding = null
         super.onDestroyView()
     }
