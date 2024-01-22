@@ -303,3 +303,4 @@ replay_pid*
 local.properties
 .gradle/buildOutputCleanup/buildOutputCleanup.lock
 .gradle/8.0/checksums/sha1-checksums.bin
+.gradle/8.0/checksums/md5-checksums.bin
