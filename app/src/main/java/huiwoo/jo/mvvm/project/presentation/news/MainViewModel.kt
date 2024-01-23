@@ -25,7 +25,7 @@ class MainViewModel : ViewModel() {
         News(
             "news title2",
             "author",
-            "https://cdn.pixabay.com/photo/2021/08/03/07/03/orange-6518675_960_720.jpg",
+            "https://t1.daumcdn.net/cfile/tistory/2511E03B577BB58733",
             "test",
             "2024-01-18",
             "7hour ago"

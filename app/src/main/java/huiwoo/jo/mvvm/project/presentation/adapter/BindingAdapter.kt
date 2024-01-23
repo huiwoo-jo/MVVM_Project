@@ -7,26 +7,22 @@ import com.bumptech.glide.Glide
 import huiwoo.jo.mvvm.project.R
 import huiwoo.jo.mvvm.project.data.model.News
 
-object BindingAdapter {
-    @BindingAdapter("news")
-    @JvmStatic
-    fun setItems(recyclerView: RecyclerView, items: ArrayList<News>) {
-        if (recyclerView.adapter == null) {
-            val adapter = NewsAdapter()
-            recyclerView.adapter = adapter
-        }
-
-        val newsAdapter = recyclerView.adapter as NewsAdapter
-
-        newsAdapter.submitList(items.toMutableList())
+@BindingAdapter("news")
+fun setItems(recyclerView: RecyclerView, items: ArrayList<News>) {
+    if (recyclerView.adapter == null) {
+        val adapter = NewsAdapter()
+        recyclerView.adapter = adapter
     }
 
-    @BindingAdapter("image")
-    @JvmStatic
-    fun setImage(imageView: ImageView, imageUrl: Any) {
-        Glide.with(imageView.context)
-            .load(imageUrl)
-            .placeholder(R.color.gray)
-            .into(imageView)
-    }
+    val newsAdapter = recyclerView.adapter as NewsAdapter
+
+    newsAdapter.submitList(items.toMutableList())
+}
+
+@BindingAdapter("imageUrl")
+fun ImageView.load(imageUrl: String) {
+    Glide.with(this)
+        .load(imageUrl)
+        .placeholder(R.color.gray)
+        .into(this)
 }

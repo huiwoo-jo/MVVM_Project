@@ -35,7 +35,7 @@
 
                 <ImageView
                     android:id="@+id/newsImg"
-                    imageURL="https://cdn.pixabay.com/photo/2021/08/03/07/03/orange-6518675_960_720.jpg"
+                    imageUrl="@{news.imgUrl}"
                     android:layout_width="0dp"
                     android:layout_height="130dp"
                     android:layout_margin="1dp"
